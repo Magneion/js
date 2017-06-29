@@ -3,9 +3,13 @@ body {
 }
 
 div {
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100%;
 }
 
-div:nth-child(odd) { background: red; } 
-div:nth-child(even) { background: blue; }
+div:nth-child(1n) { background: red; } 
+div:nth-child(1n+1) { background: orange; }
+div:nth-child(1n+2) { background: yellow; }
+div:nth-child(1n+3) { background: green; }
+div:nth-child(1n+4) { background: blue; }
+div:nth-child(1n+5) { background: purple; }
