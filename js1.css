@@ -13,3 +13,4 @@ div:nth-child(4n+6) { background: yellow; }
 div:nth-child(5n+6) { background: green; }
 div:nth-child(6n+6) { background: blue; }
 div:nth-child(7n+6) { background: purple; }
+
