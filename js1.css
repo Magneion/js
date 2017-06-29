@@ -2,3 +2,10 @@ body {
 	background-color: navajowhite;
 }
 
+div {
+	height: 150px;
+	width: 150px;
+}
+
+div:nth-child(odd) { background: red; } 
+div:nth-child(even) { background: blue; }
