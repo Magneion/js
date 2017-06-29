@@ -1,0 +1,37 @@
+.empty1 {
+ 	background-color: #F0DE8A;
+}
+
+.empty2 {
+	background-color: #B875FF;
+}
+
+.empty3 {
+	background-color: #F0311D;
+}
+
+
+.notempty1 {
+	background-color: #EBC88A;
+}
+
+.notempty2 {
+	background-color: #955FCF;
+}
+
+.notempty3 {
+	background-color: #FF3A1E;
+}
+
+
+
+div {
+	height:100px;
+	width:100%;
+	border: 1px solid black;
+	border-radius: 15px;
+}
+
+h1 {
+	margin:5em;
+}
