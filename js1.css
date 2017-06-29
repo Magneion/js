@@ -7,9 +7,9 @@ div {
 	width: 100%;
 }
 
-div:nth-child(1n) { background: red; } 
-div:nth-child(1n+1) { background: orange; }
-div:nth-child(1n+2) { background: yellow; }
-div:nth-child(1n+3) { background: green; }
-div:nth-child(1n+4) { background: blue; }
-div:nth-child(1n+5) { background: purple; }
+div:nth-child(2n+6) { background: red; } 
+div:nth-child(3n+6) { background: orange; }
+div:nth-child(4n+6) { background: yellow; }
+div:nth-child(5n+6) { background: green; }
+div:nth-child(6n+6) { background: blue; }
+div:nth-child(7n+6) { background: purple; }
