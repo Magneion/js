@@ -10,18 +10,23 @@
   <title>C'est très l'addition</title>
 </head>
 <body>
-  <h1>Bonjour, tu sais pas compter ?</h1>
+  <h2>Bonjour, tu sais pas compter ?</h2>
   <form>
     <div class="formgroup">
       <label for="number1">Ton premier nombre</label>
       <input type="number" id="number1" name="number1" required/>
       <label for="number2">Ton autre nombre</label>
       <input type="number" id="number2" name="number2" required/>
-      <button onClick="monAdd(number1, number2);">On envoie !</button>
     </div>
+    <div class="formgroup">
+    <button onClick="document.getElementById('box').innerHTML = monAdd(getElementById('number1').value, getElementById('number2').value)";>On envoie !</button>
+  </div>
   </form>
+  <div class="flex">
   <div id="box">
   </div>
+</div>
+
 
   <script type="text/javascript" src="js11.js">
   </script>

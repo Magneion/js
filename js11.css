@@ -1,4 +1,4 @@
-h1 {
+h2 {
   text-decoration: underline;
   color: #FF341E;
   text-align:center;
@@ -6,12 +6,38 @@ h1 {
 
 .formgroup {
   background-color: #A1E58D;
-  height: 150px;
-  max-width: 95%;
+  height: 4em;
+  width: 90%;
   margin: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 3px solid #FF341E;
   border-radius: 20px;
+}
+
+button {
+  margin:1em;
+}
+
+#box {
+  border: 3px solid #FF341E;
+  min-height: 50px;
+  max-width: 150px;
+  min-width: 150px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 2.5em;
+  margin:2em;
+  background-color:#A1E58D;
+}
+
+.flex {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: url(https://i18.servimg.com/u/f18/13/27/80/65/27562210.png);
 }
