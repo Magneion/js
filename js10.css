@@ -1,0 +1,22 @@
+.required {
+  color=red;
+}
+
+.civil {
+  margin:5em;
+  font-family: 'helvetica', 'sans-serif';
+  background-color: lightblue;
+  color: navy;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+
+
+h1 {
+  color: darkorchid;
+  text-align: center;
+  text-decoration: underline;
+
+}

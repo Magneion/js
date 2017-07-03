@@ -1,16 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link href="js4.css" type="text/css" rel="stylesheet"/>
-    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
-    <title>c'est très javascript</title>
-  </head>
-  <body>
-    <input type="text" onChange="console.log(myName);myName=this.value" />
-    <script type="text/javascript" src="script1.js"> </script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="js10.css" type="text/css" rel="stylesheet"/>
+  <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+  <title>Fliquez-Vous</title>
+</head>
+<body>
+  <h1> Qui êtes-vous ?</h1>
+  <form class="civil">
+    <div class="formgroup col-md-4">
+      <label for="lastname" class="col-md-6">Nom <span class="required">*</span></label>
+      <input class="col-md-6" type="text" id="lastname" placeholder="Dupont" required />
+      <label class="col-md-6" for="firstname">Prénom <span class="required">*</span></label>
+      <input class="col-md-6" type="text" id="firstname" placeholder="Martin" required/>
+      <span id="helpBlock" class="help-block col-md-12">Il est interdit d'avoir un pseudo sur ce site, veuillez utiliser votre véritable état civil qu'on puisse vous ficher correctement.</span>
+    </div>
+    <div class="formgroup col-md-4">
+      <label class="col-md-6" for="birthdate">Date de Naissance <span class="required">*</span></label>
+      <input class="col-md-6" type="date" id="birthdate" placeholder="JJ/MM/AAAA" required/>
+      <span id="helpBlock" class="help-block col-md-12">Veuillez être majeur.</span>
+    </div>
+    <div class="formgroup col-md-4">
+      <label class="col-md-6" for="address">Adresse <span class="required">*</span></label>
+      <input type="text" id="address" placeholder="10, rue du moulin" required/>
+      <label class="col-md-6" for="zipcode">Code Postal <span class="required">*</span></label>
+      <input class="col-md-6" type="number" id="zipcode" placeholder="01001" required/>
+      <label class="col-md-6" for="city">Ville <span class="required">*</span></label>
+      <input class="col-md-6" type="text" id="city" placeholder="Trifouillis-les-Oies" required/>
+    </div>
+    <div class="formgroup col-md-12">
+      <label class="col-md-6" for="gender">Genre</label>
+      <div>
+        <select class="col-md-6" name="gender" id="gender">
+          <option value="">Homme</option>
+          <option value="1">Femme</option>
+          <option value="2">Non-Binaire</option>
+          <option value="3">Va mourir</option>
+          <option value="4">Licorne</option>
+        </select>
+      </div>
+      <span id="helpBlock" class="help-block col-md-12">Si vous n'êtes pas un homme blanc cis het, c'est bien dommage.</span>
+    </div>
+    <div class="form-group col-sm-12">
+      <div>
+        <label class="col-md-6">À quelle maison de Poudlard appartenez-vous ?</label>
+        <span id="helpBlock" class="help-block control-label">Passez cette étape et subissez-en les conséquences.</span>
+      </div>
+      <div class="formgroup col-md-6">
+        <input type="checkbox" id="gryffindor" name="house[]" value="1" />
+        <label>Griffondor</label> <br />
+        <input type="checkbox" id="slytherin" name="house[]" value="2" />
+        <label>Serpentard</label> <br />
+        <input type="checkbox" id="hufflepuff" name="house[]" value="3" />
+        <label>Poufsouffle</label> <br />
+        <input type="checkbox" id="ravenclaw" name="house[]" value="4" />
+        <label>Serdaigle</label> <br />
+      </div>
+    </div>
+        <button onClick="printForm()"> Valider </button>
+      </form>
+      <div id="box">
+      </div>
+      <script type="text/javascript" src="script1.js"> </script>
+    </body>
+    </html>
