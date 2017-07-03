@@ -6,4 +6,12 @@ h1 {
 
 .formgroup {
   background-color: #A1E58D;
+  height: 150px;
+  max-width: 95%;
+  margin: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #FF341E;
+  border-radius: 20px;
 }
