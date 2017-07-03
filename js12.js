@@ -1,5 +1,12 @@
-var monAdd = function(number1, number2){
-  return parseInt(number1) + parseInt(number2)
+var result = document.getElementById('result');
+
+var myControl = function() {
+  if (parseInt(nbr.value)%2==0) {
+    result.innerHTML = 'pair';
+  }
+  else {
+    result.innerHTML = 'impair';
+  }
 }
 
-// var box = document.getElementById("box").innerHTML = monAdd(number1, number2).value;
+var nbr = document.getElementById('nbr');
